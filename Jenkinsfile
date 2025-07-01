@@ -27,7 +27,6 @@ pipeline {
                     reuseNode true
                 }
             }
-
             steps{
                 
                 echo 'Test Stage'
@@ -35,8 +34,6 @@ pipeline {
                     test -f build/index.html
                     npm test
                 '''    
-
-
             }
             
         }
