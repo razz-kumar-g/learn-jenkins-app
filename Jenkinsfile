@@ -24,7 +24,7 @@ pipeline {
             steps{
                 echo 'Test Stage'
                 sh '''
-                    grep "index.html" Build/Jenkinsfile.txt
+                    grep "index.html" build/Jenkinsfile.txt
                     npm test
                 '''    
 
